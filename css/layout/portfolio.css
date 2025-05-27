@@ -41,7 +41,7 @@
     left: 0;
     padding: 10px 20px;
     color: white;
-    font-size: var(--font-size-normal);
+    font-size: var(--font-size-small);
     font-weight: 700;
 }
 

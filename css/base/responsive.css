@@ -149,14 +149,6 @@
         width: 32%;
     }
 
-    .rebranding::before,
-    .branding::before,
-    .card::before,
-    .site::before,
-    .ecommerce::before {
-        font-size: var(--font-size-small);
-    }
-
     .card img {
         padding: 40px;
     }
