@@ -137,6 +137,10 @@
     }
 
     /* Portfolio */
+    [data-theme='light'] .portfolio {
+        border-bottom: 1px solid #ccc;
+    }
+
     .portfolio__container {
         gap: 20px;
     }
