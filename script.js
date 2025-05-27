@@ -25,35 +25,35 @@ toggleTheme.addEventListener('click', () => {
 });
 
 // CORRIGIR --------------
-// // SCRIPTS para o menu de navegação
-// const navButton = document.querySelector('.nav-btn');
-// const navLink = document.querySelectorAll('.nav-link');
-// const nav = document.querySelector('.nav');
+// SCRIPTS para o menu de navegação
+const navButton = document.querySelector('.nav-btn');
+const navLink = document.querySelectorAll('.nav-link');
+const nav = document.querySelector('.nav');
 
-// setTimeout(() => {
-//   navButton.setAttribute('aria-expanded', 'false');
-//   nav.classList.add('nav__hidden');
-// }, 1500);
+setTimeout(() => {
+  navButton.setAttribute('aria-expanded', 'false');
+  nav.classList.add('nav__hidden');
+}, 5000);
 
-// // Botão para abrir e fechar o menu de navegação
-// navButton.addEventListener('click', () => {
-//   const isNavHidden = nav.classList.contains('nav__hidden');
-//   if (isNavHidden) {
-//     nav.classList.remove('nav__hidden');
-//     navButton.setAttribute('aria-expanded', 'false');
-//   } else {
-//     nav.classList.add('nav__hidden');
-//     navButton.setAttribute('aria-expanded', 'true');
-//   }
-// });
+// Botão para abrir e fechar o menu de navegação
+navButton.addEventListener('click', () => {
+  const isNavHidden = nav.classList.contains('nav__hidden');
+  if (isNavHidden) {
+    nav.classList.remove('nav__hidden');
+    navButton.setAttribute('aria-expanded', 'false');
+  } else {
+    nav.classList.add('nav__hidden');
+    navButton.setAttribute('aria-expanded', 'true');
+  }
+});
 
-// // Esconde o menu quando um link é clicado
-// navLink.forEach((link) => {
-//   link.addEventListener('click', () => {
-//     nav.classList.remove('nav__hidden');
-//     navButton.setAttribute('aria-expanded', 'false');
-//   });
-// });
+// Esconde o menu quando um link é clicado
+navLink.forEach((link) => {
+  link.addEventListener('click', () => {
+    nav.classList.add('nav__hidden');
+    navButton.setAttribute('aria-expanded', 'false');
+  });
+});
 
 //SCRIPT para enviar formulário para o WhatsApp
 // Elementos do formulário

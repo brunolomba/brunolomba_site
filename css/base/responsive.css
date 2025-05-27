@@ -13,6 +13,26 @@
         transform: translateY(calc((-100%) + 133px));
     }
 
+    /* Navogation */
+    .nav-list {
+        flex-wrap: nowrap;
+        width: 100vw;
+    }
+
+    .nav-item {
+        flex-basis: 20%;
+        width: 100%;
+    }
+
+    .intro__text {
+        width: 70vw;
+    }
+
+    .intro__text,
+    .intro__text strong {
+        font-size: var(--font-size-large);
+    }
+
     /* Areas */
     .areas__container {
         justify-content: center;
@@ -82,11 +102,17 @@
 
 @media (min-width: 1024px) {
 
+    /* Max-Width Desktop */
     .hero,
     .knowledge__container,
     .services__container,
     .contact__container {
         max-width: 1200px;
+    }
+
+    /* Navigation */
+    .intro__text {
+        width: 60vw;
     }
 
     /* Hero */

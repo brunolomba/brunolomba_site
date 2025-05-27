@@ -1,3 +1,10 @@
+/* Animation Scroll */
+html {
+    scroll-behavior: smooth;
+    /* Height Menu */
+    scroll-padding-top: 128px;
+}
+
 /* Animations CSS Pure */
 /* Animation btn header */
 #toggle-theme,

@@ -15,7 +15,9 @@
     font-size: var(--font-size-small);
     color: var(--text-color);
     width: 60px;
-    text-align: end;
+    height: 65px;
+    width: 65px;
+    text-align: center;
     cursor: pointer;
 }
 
@@ -27,14 +29,16 @@
 }
 
 .btn-projects,
-.btn-cta {
+.btn-cta,
+.nav-item:hover {
     border: 1px solid var(--text-color);
     background-color: var(--primary-color);
     color: var(--text-color);
 }
 
 .btn-projects:hover,
-.btn-cta:hover {
+.btn-cta:hover,
+.nav-item:hover {
     border: 1px solid transparent;
     color: white;
 }

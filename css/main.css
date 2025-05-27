@@ -31,31 +31,3 @@
 
 /* Base */
 @import './base/responsive.css';
-
-/* Introdução */
-#intro {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--text-color-inverted);
-    /* remover ou ajustar */
-    padding-bottom: 250px;
-}
-
-.intro__title {
-    font-weight: 700;
-    font-size: var(--font-size-large);
-    padding: 40px;
-}
-
-.intro-text,
-.intro-text strong {
-    font-size: var(--font-size-large);
-    color: var(--text-color);
-    width: 80%;
-}
-
-.intro-text strong {
-    color: var(--green);
-}

@@ -15,6 +15,7 @@
 }
 
 /* h2 Title Design */
+.intro__text strong,
 .hero-title,
 .knowledge__title,
 .portfolio__title,
@@ -75,6 +76,29 @@
 /* Nav Areas */
 .areas-text {
     font-size: 1.4rem;
+}
+
+/* Introdução */
+.intro__title {
+    font-weight: 1000;
+    font-size: var(--font-size-large);
+}
+
+.intro__text {
+    text-align: center;
+    padding: 0 5vw;
+    line-height: 2.8rem;
+    color: var(--text-color);
+}
+
+.intro__text,
+.intro__text strong {
+    font-size: var(--font-size-normal);
+}
+
+.intro__text strong {
+    font-weight: 500;
+    color: var(--blue);
 }
 
 /* Hero */
