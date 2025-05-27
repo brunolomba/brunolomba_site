@@ -17,6 +17,7 @@
 .portfolio__item {
     position: relative;
     border: 1px solid #e7e7e7;
+    border-radius: var(--btn-border);
 }
 
 .portfolio__img {
@@ -29,6 +30,7 @@
 .site img,
 .ecommerce img {
     padding: 0;
+    border-radius: var(--btn-border);
 }
 
 .rebranding::before,
@@ -40,6 +42,7 @@
     top: 0;
     left: 0;
     padding: 10px 20px;
+    border-radius: var(--btn-border) 0 var(--btn-border) 0;
     color: white;
     font-size: var(--font-size-small);
     font-weight: 700;
