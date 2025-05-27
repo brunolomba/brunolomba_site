@@ -16,7 +16,6 @@
     /* Navogation */
     .nav-list {
         flex-wrap: nowrap;
-        width: 100vw;
     }
 
     .nav-item {
@@ -112,6 +111,11 @@
     }
 
     /* Navigation */
+
+    .nav-list {
+        width: 70vw;
+    }
+
     .intro__text {
         width: 45vw;
     }
