@@ -82,13 +82,14 @@
 .intro__title {
     font-weight: 1000;
     font-size: var(--font-size-large);
+    margin: 15px 0
 }
 
 .intro__text {
     text-align: center;
-    padding: 0 5vw;
-    line-height: 2.8rem;
-    color: var(--text-color);
+    width: 75vw;
+    line-height: 2.2rem;
+    color: var(--secondary-color);
 }
 
 .intro__text,

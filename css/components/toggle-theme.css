@@ -1,11 +1,11 @@
 /* Toggle Theme */
 #toggle-theme {
-    width: 25px;
-    height: 25px;
-    margin: 20px;
+    width: 19px;
+    height: 19px;
+    margin: 22px;
     font-size: var(--font-size-small);
     font-weight: 500;
-    text-indent: 30px;
+    text-indent: 33px;
     color: var(--text-color);
     border-radius: var(--border-100);
     cursor: pointer;

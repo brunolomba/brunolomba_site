@@ -9,7 +9,7 @@ html {
 /* Animation btn header */
 #toggle-theme,
 .nav-btn {
-    animation: aparecer 6s ease-in-out;
+    animation: aparecer 8s ease-in-out;
 }
 
 
@@ -36,7 +36,7 @@ html {
 
 .line-top {
     position: fixed;
-    top: 65px;
+    top: 66px;
     width: 100%;
     z-index: 101;
 }

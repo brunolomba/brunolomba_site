@@ -33,7 +33,7 @@ const nav = document.querySelector('.nav');
 setTimeout(() => {
   navButton.setAttribute('aria-expanded', 'false');
   nav.classList.add('nav__hidden');
-}, 5000);
+}, 4000);
 
 // Botão para abrir e fechar o menu de navegação
 navButton.addEventListener('click', () => {

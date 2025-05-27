@@ -26,6 +26,7 @@
 
     .intro__text {
         width: 70vw;
+        line-height: 3.5rem;
     }
 
     .intro__text,

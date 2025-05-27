@@ -67,7 +67,8 @@ footer {
 
 /* Background Gradient Colors */
 .works,
-.services {
+.services,
+.nav-item:hover {
     background: linear-gradient(45deg, var(--green), var(--purple));
     background-size: 200% 100%;
     animation: moveLineColor 5s linear infinite alternate;
