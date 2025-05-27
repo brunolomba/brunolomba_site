@@ -52,6 +52,10 @@ footer {
     padding: 10vh 5vh 10vh;
 }
 
+.portfolio {
+    padding: 10vh 0;
+}
+
 /* Containers Patterns */
 .works__container,
 .services__container,

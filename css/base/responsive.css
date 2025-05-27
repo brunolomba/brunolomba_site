@@ -128,13 +128,33 @@
     /* Works Brands */
     .works__container {
         max-width: 100%;
-        gap: 20px;
     }
 
     .light-color-container:hover {
         background: linear-gradient(90deg in hsl longer hue, white, grey, white);
         background-size: 150% 100%;
         animation: moveLineColor 3s linear infinite alternate;
+    }
+
+    /* Portfolio */
+    .portfolio__container {
+        gap: 20px;
+    }
+
+    .portfolio__item {
+        width: 32%;
+    }
+
+    .rebranding::before,
+    .branding::before,
+    .card::before,
+    .site::before,
+    .ecommerce::before {
+        font-size: var(--font-size-small);
+    }
+
+    .card img {
+        padding: 40px;
     }
 
     /* Contato */

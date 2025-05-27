@@ -5,9 +5,10 @@
 .knowledge__title span,
 .services__title,
 .services__title span,
+.portfolio__title,
+.portfolio__title span,
 .cta-form__title {
     font-size: 5rem;
-    line-height: 3.7rem;
     letter-spacing: 2px;
     text-align: center;
     margin-bottom: 5vh;
@@ -16,6 +17,7 @@
 /* h2 Title Design */
 .hero-title,
 .knowledge__title,
+.portfolio__title,
 .cta-form__title,
 .modal__title {
     /* Efeito colorido */
@@ -28,11 +30,17 @@
 .works__title span,
 .knowledge__title span,
 .services__title span,
+.portfolio__title span,
 .cta-form__title span {
     font-family: Arial, Helvetica, sans-serif;
     color: transparent;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--text-color);
+}
+
+.portfolio__title span {
+    -webkit-text-stroke-color: black;
+
 }
 
 .knowledge__title span,
@@ -42,7 +50,8 @@
 
 /* Text White color for gradient background */
 .works__title,
-.services__title {
+.services__title,
+.portfolio__title span {
     color: white;
 }
 
@@ -55,6 +64,7 @@
 .works__subtitle,
 .knowledge__subtitle,
 .services__subtitle,
+.portfolio__subtitle,
 .cta-form__text,
 .socialmedia__title {
     font-size: var(--font-size-normal);
@@ -115,6 +125,11 @@
 
 .tech-name {
     font-size: var(--font-size-small);
+}
+
+/* Portfolio */
+.portfolio__subtitle {
+    color: black;
 }
 
 /* Form */

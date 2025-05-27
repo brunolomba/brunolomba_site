@@ -1,0 +1,77 @@
+.portfolio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+}
+
+.portfolio__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: white;
+    row-gap: 40px;
+}
+
+.portfolio__item {
+    position: relative;
+    border: 1px solid #e7e7e7;
+}
+
+.portfolio__img {
+    padding: 40px;
+    max-width: 100%;
+    height: 100%;
+}
+
+.card img,
+.site img,
+.ecommerce img {
+    padding: 0;
+}
+
+.rebranding::before,
+.branding::before,
+.card::before,
+.site::before,
+.ecommerce::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    color: white;
+    font-size: var(--font-size-normal);
+    font-weight: 700;
+}
+
+.rebranding::before,
+.branding::before,
+.card::before {
+    background: linear-gradient(45deg, var(--pink), var(--purple));
+}
+
+.site::before,
+.ecommerce::before {
+    background: linear-gradient(45deg, var(--green), var(--purple));
+}
+
+.rebranding::before {
+    content: "REBRANDING";
+}
+
+.branding::before {
+    content: "BRANDING";
+}
+
+.card::before {
+    content: "CARTÃO PREMIUM";
+}
+
+.site::before {
+    content: "SITE";
+}
+
+.ecommerce::before {
+    content: "E-Commerce";
+}

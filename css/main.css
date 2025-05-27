@@ -6,9 +6,10 @@
 /* Layouts */
 @import './layout/structure.css';
 @import './layout/hero.css';
-@import './layout/services.css';
-@import './layout/knowledge.css';
 @import './layout/works.css';
+@import './layout/knowledge.css';
+@import './layout/services.css';
+@import './layout/portfolio.css';
 @import './layout/contact.css';
 @import './layout/form.css';
 
