@@ -29,16 +29,14 @@
 }
 
 .btn-projects,
-.btn-cta,
-.nav-item:hover {
+.btn-cta {
     border: 1px solid var(--text-color);
     background-color: var(--primary-color);
     color: var(--text-color);
 }
 
 .btn-projects:hover,
-.btn-cta:hover,
-.nav-item:hover {
+.btn-cta:hover {
     border: 1px solid transparent;
     color: white;
 }

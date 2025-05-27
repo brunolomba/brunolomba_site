@@ -36,28 +36,29 @@
 }
 
 .nav-item {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-grow: 1;
     flex-basis: 33%;
-    padding: 15px 0;
-    border: 1px solid var(--text-color);
+    height: 45px;
+    border: 1px solid transparent;
     border-radius: var(--btn-border);
 }
 
 .nav-item:hover {
-    color: white;
-}
-
-[data-theme='light'] .nav-item:hover .nav-link {
-    color: white;
+    border: 1px solid var(--text-color);
+    background: var(--black);
 }
 
 .nav-link {
-    display: inline-block;
+    display: block;
+    text-align: center;
     width: 100%;
     height: 100%;
-    color: var(--text-color);
-    white-space: nowrap;
+    padding: 15px;
+    line-height: var(--font-size-normal);
+    color: white;
     font-size: var(--font-size-normal);
     transition: color 0.3s;
 }
