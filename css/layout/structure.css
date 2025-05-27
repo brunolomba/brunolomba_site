@@ -47,13 +47,16 @@ footer {
 .works,
 .knowledge,
 .services,
-.contact,
-.socialmedia__container {
+.contact {
     padding: 10vh 5vh 10vh;
 }
 
 .portfolio {
     padding: 10vh 0;
+}
+
+.socialmedia__container {
+    padding: 5vh;
 }
 
 /* Containers Patterns */
@@ -69,4 +72,9 @@ footer {
     background: linear-gradient(45deg, var(--green), var(--purple));
     background-size: 200% 100%;
     animation: moveLineColor 5s linear infinite alternate;
+}
+
+/* Portfolio */
+[data-theme='light'] .portfolio {
+    border-bottom: 1px solid #e4e4e4;
 }

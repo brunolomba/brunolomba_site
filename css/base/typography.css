@@ -19,7 +19,8 @@
 .knowledge__title,
 .portfolio__title,
 .cta-form__title,
-.modal__title {
+.modal__title,
+.socialmedia__title {
     /* Efeito colorido */
     background: linear-gradient(45deg, var(--green), var(--purple));
     -webkit-background-clip: text;

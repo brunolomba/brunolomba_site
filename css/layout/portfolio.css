@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     background-color: white;
     row-gap: 40px;
+    padding: 0 10px;
 }
 
 .portfolio__item {

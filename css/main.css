@@ -21,7 +21,7 @@
 @import './components/logo.css';
 @import './components/modal-submit-form.css';
 @import './components/navigation.css';
-@import './components/social-medias.css';
+@import './layout/social-medias.css';
 @import './components/toggle-theme.css';
 @import './components/whatsapp-fixed.css';
 
