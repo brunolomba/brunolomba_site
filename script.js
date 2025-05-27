@@ -1,3 +1,8 @@
+// SCRIPT para fixar o reload no topo da página
+window.onload = function () {
+  window.scrollTo(0, 0);
+};
+
 // SCRIPTS para alterar o tema dark e light
 const toggleTheme = document.getElementById('toggle-theme');
 const html = document.querySelector('html');
