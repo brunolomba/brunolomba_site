@@ -3,6 +3,37 @@ window.onload = function () {
   window.scrollTo(0, 0);
 };
 
+//SCRIPT para remover a hash e query string da URL
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.location.hash || window.location.search) {
+    const newUrl =
+      window.location.protocol +
+      '//' +
+      window.location.host +
+      window.location.pathname;
+    window.history.replaceState({}, document.title, newUrl);
+  }
+});
+
+//SCRIPTS exibir aniamação do menu de navegação apanas na primeira vez
+document.addEventListener('DOMContentLoaded', function () {
+  const navButton = document.querySelector('.nav-btn');
+  const nav = document.querySelector('.nav');
+  const accessed = localStorage.getItem('accessed');
+
+  if (!accessed) {
+    // Adicionar um evento para esconder a animação após um tempo ou interação
+    setTimeout(() => {
+      navButton.setAttribute('aria-expanded', 'false');
+      nav.classList.add('nav__hidden');
+      localStorage.setItem('accessed', 'true');
+    }, 7000);
+  } else {
+    navButton.setAttribute('aria-expanded', 'false');
+    nav.classList.add('nav__hidden');
+  }
+});
+
 // SCRIPTS para alterar o tema dark e light
 const toggleTheme = document.getElementById('toggle-theme');
 const html = document.querySelector('html');

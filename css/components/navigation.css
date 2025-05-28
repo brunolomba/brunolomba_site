@@ -9,7 +9,7 @@
     height: 100%;
     background-color: var(--primary-color);
     transform: translateY(-82px);
-    transition: transform 2s ease;
+    transition: transform 1.5s ease;
 }
 
 .nav__container {
