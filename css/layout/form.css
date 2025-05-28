@@ -39,7 +39,7 @@ textarea:-webkit-autofill:focus,
 textarea:-webkit-autofill:active,
 textarea:-webkit-autofill:hover {
     font-family: var(--font-family-plus-jakarta);
-    -webkit-box-shadow: 0 0 0 20px var(--primary-background-color) inset;
+    -webkit-box-shadow: 0 0 0 25px var(--primary-background-color) inset;
     -webkit-text-fill-color: var(--green);
 }
 
