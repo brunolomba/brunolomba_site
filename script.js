@@ -19,14 +19,14 @@ document.addEventListener('DOMContentLoaded', function () {
 document.addEventListener('DOMContentLoaded', function () {
   const navButton = document.querySelector('.nav-btn');
   const nav = document.querySelector('.nav');
-  const accessed = localStorage.getItem('accessed');
+  const firstAccessed = localStorage.getItem('firstAccessed');
 
-  if (!accessed) {
-    // Adicionar um evento para esconder a animação após um tempo ou interação
+  if (!firstAccessed) {
+    localStorage.setItem('firstAccessed', 'true');
+
     setTimeout(() => {
       navButton.setAttribute('aria-expanded', 'false');
       nav.classList.add('nav__hidden');
-      localStorage.setItem('accessed', 'true');
     }, 7000);
   } else {
     navButton.setAttribute('aria-expanded', 'false');
