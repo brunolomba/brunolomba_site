@@ -21,6 +21,9 @@ header {
 main {
     margin-top: 10vh;
     overflow: hidden;
+    height: 100%;
+    background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 100%);
+    overflow: hidden;
 }
 
 /* Body */
@@ -72,6 +75,11 @@ footer {
     background: linear-gradient(45deg, var(--green), var(--purple));
     background-size: 200% 100%;
     animation: moveLineColor 5s linear infinite alternate;
+}
+
+/* Nav Buttons */
+.nav .nav-item {
+    background: var(--grey-medium);
 }
 
 /* Portfolio */

@@ -2,6 +2,7 @@
 
     /* Max-Width Container */
     .hero-info__container,
+    .hero-highlights__container,
     .works__container,
     .services__container,
     .contact__container {
@@ -16,6 +17,7 @@
     /* Navogation */
     .nav-list {
         flex-wrap: nowrap;
+        max-width: 50%;
     }
 
     .nav-item {
@@ -64,27 +66,86 @@
 
     .btn-projects,
     .btn-cta {
-        flex-grow: 1;
+        width: 100%;
+        background-color: rgba(var(--primary-color), 0.1);
+    }
+
+    .btn-cta {
+        background-color: rgba(var(--primary-color), 0.1);
+    }
+
+    .btn-projects:after,
+    .btn-cta:after {
+        content: "";
+        height: 200px;
+        width: 100px;
+        position: absolute;
+        top: -80px;
+        left: -140px;
+        background: rgba(255, 255, 255, 0.8);
+        opacity: .3;
+        transform: rotate(45deg);
+        transition: all 1350ms cubic-bezier(0.19, 1, 0.22, 1);
+        z-index: 10;
+        pointer-events: none;
+    }
+
+    .border-svg {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        fill: none;
+        pointer-events: none;
+    }
+
+    .btn-projects:hover,
+    .btn-cta:hover {
+        transform: translateY(-2px);
+        border-color: transparent;
+        /* A borda do SVG assume o visual */
+    }
+
+    .btn-projects:hover:after,
+    .btn-cta:hover:after {
+        left: 120%;
+        width: 0px;
+    }
+
+    .btn-projects:hover .hl-line,
+    .btn-cta:hover .hl-line {
+        stroke-dashoffset: -545;
+    }
+
+    .btn-projects:hover {
+        background-color: rgba(179, 0, 255, 0.4);
+    }
+
+    .btn-cta:hover {
+        background-color: rgba(0, 204, 170, 0.6);
+    }
+
+    .btn-projects .hl-line,
+    .btn-cta .hl-line {
+        stroke-width: 5px;
+        transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
     }
 
     /* Hero Image */
-    .hero-animation__container {
-        margin-top: -200px;
-        flex-direction: row;
-        display: inline;
-        width: 45%;
-        flex-grow: 1;
-        height: 32vh;
-        padding-top: 0;
-    }
-
-    .hero-animation {
-        transform: scale(1.6);
-    }
-
     .hero-highlights__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 0;
         padding-top: 0;
-        width: 50%;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .highlights__container {
+        width: 48%;
     }
 
     .tech-item {
@@ -102,6 +163,72 @@
 
 @media (min-width: 1024px) {
 
+    /* Teste */
+    .highlights__container {
+        position: relative;
+        padding: 30px;
+        border-radius: 16px;
+        overflow: hidden;
+        display: inline-flex;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .highlights__container:after {
+        height: 300px;
+        left: -175px;
+        top: -35px;
+        border-radius: 6px;
+    }
+
+    .highlights__container:hover {
+        color: black;
+    }
+
+    .highlights__container:hover:after {
+        left: 110%;
+        top: -170px;
+        height: 500px;
+        width: 500px;
+        border-radius: 24px;
+        transform: rotate(135deg);
+        transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .border-svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        fill: none;
+        pointer-events: none;
+    }
+
+    .border-svg rect {
+        /* O cálculo do Perímetro de um retângulo é 2*(L+A). 
+       Usar 1000 no dasharray costuma cobrir a maioria dos tamanhos de card. */
+        stroke-dasharray: 150 1200;
+        stroke-dashoffset: 150;
+        stroke-width: 2px;
+        transition: 3s cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    .bg-line {
+        stroke: transparent;
+        /* Se quiser ver o caminho, use rgba(255,255,255,0.05) */
+    }
+
+    .hl-line {
+        stroke-linecap: round;
+        /* Faz as pontas da linha serem arredondadas */
+    }
+
+    /* Animação no Hover */
+    .highlights__container:hover .hl-line {
+        stroke-dashoffset: -1200;
+        /* Faz a linha percorrer todo o perímetro */
+    }
+
     /* Max-Width Desktop */
     .hero,
     .knowledge__container,
@@ -113,7 +240,7 @@
     /* Navigation */
 
     .nav-list {
-        width: 70vw;
+        width: 30%;
     }
 
     .intro__text {
@@ -122,39 +249,17 @@
 
     /* Hero */
     .hero {
-        justify-self: center;
         width: 100%;
     }
 
     /* Hero Infos */
     .hero-info__container {
-        width: 50%;
+        width: 100%;
         align-self: center;
         margin-bottom: 0;
     }
 
-    /* Hero Image */
-    .hero-animation__container {
-        width: 40%;
-        height: 50vh;
-    }
-
-    .hero-animation {
-        transform: scale(1.4);
-    }
-
     /* Hero Highlights */
-    .hero-highlights__container {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    .highlights__container {
-        width: 40%;
-        flex-grow: 1;
-    }
 
     /* Works Brands */
     .works__container {

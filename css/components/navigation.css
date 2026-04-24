@@ -15,12 +15,13 @@
 .nav__container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
     margin-top: 148px;
     border-bottom: 1px solid var(--text-color);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .nav__hidden {
@@ -29,7 +30,8 @@
 
 .nav-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
     padding: 40px 0;
     width: 90vw;

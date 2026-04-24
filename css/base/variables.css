@@ -3,10 +3,10 @@
     --white: #fff;
     --black: #000;
     --grey-medium: #292929;
-    --green: #00ccaa;
-    --pink: #ff5cb8;
-    --blue: #3dc8ff;
-    --purple: #b300ff;
+    --green: rgb(0, 204, 170);
+    --pink: rgb(255, 92, 184);
+    --blue: rgb(61, 200, 255);
+    --purple: rgb(179, 0, 255);
     --whatsapp-green: #128C7E;
     --whatsapp-green-light: #25D366;
 

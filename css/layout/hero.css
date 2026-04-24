@@ -3,6 +3,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
 }
 
 /* Hero Infos */
@@ -12,18 +14,9 @@
     gap: 30px
 }
 
-/* Hero Image or Animation */
-.hero-animation__container {
-    margin-top: -100px;
-    /* overflow: hidden; */
-}
-
-.hero-animation {
-    display: flex;
-}
-
 /* Hero Highlights */
 .hero-highlights__container {
+    margin-top: -100px;
     padding-top: 10vh;
     display: flex;
     flex-direction: column;
@@ -34,7 +27,15 @@
     display: flex;
     gap: 10px;
     border-radius: var(--border);
+    border: 1px solid;
+    padding: 20px;
+}
 
+.glass-effect {
+    /* From https://css.glass */
+    border-radius: 16px;
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
 }
 
 .projects-done__icon-check {
@@ -46,6 +47,7 @@
 .projects-done__title,
 .projects-done__texts {
     font-size: var(--font-size-large);
+    z-index: 100;
 }
 
 .projects-done__title {

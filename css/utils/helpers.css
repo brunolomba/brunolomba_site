@@ -11,18 +11,60 @@
 /* Colors Areas */
 .color-tecnologia {
     color: var(--green);
+    stroke: var(--green);
 }
 
 .color-design {
     color: var(--pink);
+    stroke: var(--pink);
+    border-color: var(--pink);
 }
 
 .color-publicidade {
     color: var(--blue);
+    stroke: var(--blue);
 }
 
 .color-marketing {
     color: var(--purple);
+    stroke: var(--purple);
+}
+
+/* Glass Effect Colors */
+.glass-color-tecnologia {
+    background: rgba(0, 204, 170, 0.04);
+}
+
+.glass-color-tecnologia:hover {
+    background: rgba(0, 204, 170, 0.3);
+    box-shadow: 0 0px 8px 1px rgba(0, 204, 170, 0.3);
+}
+
+.glass-color-design {
+    background: rgba(255, 92, 184, 0.04);
+}
+
+.glass-color-design:hover {
+    background: rgba(255, 92, 184, 0.3);
+    box-shadow: 0 0px 8px 1px rgba(255, 92, 184, 0.3);
+}
+
+.glass-color-publicidade {
+    background: rgba(61, 200, 255, 0.04);
+}
+
+.glass-color-publicidade:hover {
+    background: rgba(61, 200, 255, 0.3);
+    box-shadow: 0 0px 8px 1px rgba(61, 200, 255, 0.3);
+}
+
+.glass-color-marketing {
+    background: rgba(179, 0, 255, 0.04);
+}
+
+.glass-color-marketing:hover {
+    background: rgba(179, 0, 255, 0.3);
+    box-shadow: 0 0px 8px 1px rgba(179, 0, 255, 0.3);
 }
 
 /* Borders Colors */

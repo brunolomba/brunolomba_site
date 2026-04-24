@@ -184,3 +184,18 @@ document.getElementById('phone').addEventListener('keydown', function (e) {
     e.preventDefault();
   }
 });
+
+// Animation Hero Section background
+// Função para gerar as coordenadas das estrelas
+function generateStars(n) {
+  let value = `${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px #FFF`;
+  for (let i = 2; i <= n; i++) {
+    value += `, ${Math.floor(Math.random() * 2000)}px ${Math.floor(Math.random() * 2000)}px #FFF`;
+  }
+  return value;
+}
+
+// Aplicando as sombras nos elementos
+document.getElementById('stars').style.boxShadow = generateStars(700);
+document.getElementById('stars2').style.boxShadow = generateStars(200);
+document.getElementById('stars3').style.boxShadow = generateStars(100);

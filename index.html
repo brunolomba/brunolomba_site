@@ -89,7 +89,7 @@
         <!-- Navigation -->
         <nav class='nav'>
             <div class='nav__container'>
-                <img src='./assets/images/perfil.jpeg' alt='' class='perfil-img'>
+                <!-- <img src='./assets/images/perfil.jpeg' alt='' class='perfil-img'>
                 <h2 class='intro__title'>Olá, SEJA BEM-VINDO ! ! !</h2>
                 <p class='intro__text'>
                     <strong>PUBLICITÁRIO</strong> de formação, tenho vocação para <strong>DESIGN</strong> e
@@ -98,7 +98,7 @@
                     possam <strong>DESENVOLVER</strong> seus <strong>NEGÓCIOS</strong> com <strong>QUALIDADE</strong> e
                     <strong>SEGURANÇA</strong>.
                     <br>
-                </p>
+                </p> -->
                 <ul class='nav-list'>
                     <li class='nav-item'>
                         <a href='#works' class='nav-link' role='region' aria-label='Experiência'>Experiência</a>
@@ -118,13 +118,13 @@
                 </ul>
             </div>
             <section class='areas__container'>
-                <span class='areas-text color-tecnologia'>TECNOLOGIA</span>
-                <span class='areas-text'> | </span>
                 <span class='areas-text color-design'>DESIGN</span>
                 <span class='areas-text'> | </span>
-                <span class='areas-text color-publicidade'>PUBLICIDADE</span>
-                <span class='areas-text'> | </span>
                 <span class='areas-text color-marketing'>MARKETING</span>
+                <span class='areas-text'> | </span>
+                <span class='areas-text color-tecnologia'>TECNOLOGIA</span>
+                <span class='areas-text'> | </span>
+                <span class='areas-text color-publicidade'>PUBLICIDADE</span>
             </section>
         </nav>
 
@@ -155,6 +155,9 @@
     </header>
 
     <main>
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
         <!-- Hero -->
         <section class='hero'>
             <div class='hero-info__container'>
@@ -162,34 +165,59 @@
                 <!-- <div class='hero-areas'>Soluções integradas com base na realidade do seu negócio</div> -->
 
                 <!-- Hero Title -->
-                <h1 class='hero-title'>SOLUÇÕES ESTRURADAS E ORGANIZADAS, PARA A REALIDADE DO SEU NEGÓCIO. </h1>
+                <h1 class='hero-title'>ESTRATÉGIAS EFICIENTES E INTELIGENTES PARA O SEU NEGÓCIO. </h1>
 
                 <!-- Hero Text -->
-                <div class='hero-text'>De forma integrada e estratégica, criei um processo otimizado para pequenos e
-                    médios negócios, com base em técnicas e conceitos utilizadas em grandes empresas.
+                <div class='hero-text'>Soluções com conceitos aplicados em grandes empresas, otimizados para pequenos e
+                    médios negócios ou profissionais autônomos.
                 </div>
 
                 <!-- Hero Btns -->
                 <div class='hero-info__btn'>
-                    <a href='#portfolio' class='btn-projects'>Portfólio</a>
-                    <!-- Remover Botão ??? -->
-                    <a href='https://wa.me/5511952193890?text=Olá,+Bruno!+Gostaria+de+solicitar+um+orçamento.+Encontrei+seu+site+e+estou+interessado+nos+seus+serviços.'
-                        target='_blank' class='btn-cta'>Fale Comigo</a>
+                    <a href='#portfolio' class='btn-projects glass-effect'>
+                        <svg class="border-svg">
+                            <rect x="0" y="0" width="100%" height="100%" rx="16" ry="16"
+                                class="hl-line color-marketing" />
+                        </svg>
+                        Portfólio
+                    </a>
+
+                    <a href='https://wa.me/5511952193890?text=Olá...' target='_blank' class='btn-cta glass-effect'>
+                        <svg class="border-svg">
+                            <rect x="0" y="0" width="100%" height="100%" rx="16" ry="16"
+                                class="hl-line color-tecnologia" />
+                        </svg>
+                        Fale Comigo
+                    </a>
                 </div>
             </div>
 
-            <!-- Hero Imgage or Animation -->
-            <div class='hero-animation__container'>
-                <dotlottie-player src='https://lottie.host/cbc2d6f3-f308-48b9-9f9a-62c628ce870b/eU3ULb4de7.lottie'
-                    background='transparent' speed='1' loop autoplay class='hero-animation'></dotlottie-player>
-            </div>
             <!-- Highlights -->
             <div class='hero-highlights__container'>
-                <div class='highlights__container'>
-                    <svg class='projects-done__icon-check fill-tecnologia' xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 448 512'>
-                        <path
-                            d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
+                <div class='highlights__container color-design glass-effect glass-color-design'>
+                    <svg class="border-svg">
+                        <rect x="0" y="0" width="100%" height="100%" rx="16" ry="16" class="bg-line" />
+                        <rect x="0" y="0" width="100%" height="100%" rx="16" ry="16" class="hl-line color-design" />
+                    </svg>
+                    <p class='projects-done__title color-design'>DESIGN<br>
+                        <span class='projects-done__texts'>O Design feito com Direção de Arte, faz sua marca estar
+                            sempre conectada com seus clientes e seus valores.</span>
+                    </p>
+                </div>
+                <div class='highlights__container color-marketing glass-effect glass-color-marketing'>
+                    <svg class="border-svg">
+                        <rect x="0" y="0" width="100%" height="100%" rx="16" ry="16" class="bg-line" />
+                        <rect x="0" y="0" width="100%" height="100%" rx="16" ry="16" class="hl-line color-marketing" />
+                    </svg>
+                    <p class='projects-done__title color-marketing'>MARKETING<br>
+                        <span class='projects-done__texts'>Analisando a realidade do seu negócio, é possível desenvolver
+                            oportunidades e estratégias otimizadas para cada situação.</span>
+                    </p>
+                </div>
+                <div class='highlights__container color-tecnologia glass-effect glass-color-tecnologia'>
+                    <svg class="border-svg">
+                        <rect x="0" y="0" width="100%" height="100%" rx="16" ry="16" class="bg-line" />
+                        <rect x="0" y="0" width="100%" height="100%" rx="16" ry="16" class="hl-line color-tecnologia" />
                     </svg>
                     <p class='projects-done__title color-tecnologia'>TECNOLOGIA<br>
                         <span class='projects-done__texts'>Projetos pensados e organizados com boas práticas e
@@ -198,40 +226,20 @@
                         </span>
                     </p>
                 </div>
-                <div class='highlights__container'>
-                    <svg class='projects-done__icon-check fill-design' xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 448 512'>
-                        <path
-                            d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
+                <div class='highlights__container color-publicidade glass-effect glass-color-publicidade'>
+                    <svg class="border-svg">
+                        <rect x="0" y="0" width="100%" height="100%" rx="16" ry="16" class="bg-line" />
+                        <rect x="0" y="0" width="100%" height="100%" rx="16" ry="16"
+                            class="hl-line color-publicidade" />
                     </svg>
-                    <p class='projects-done__title color-design'>DESIGN | DIREÇÃO DE ARTE<br>
-                        <span class='projects-done__texts'>O Design feito com Direção de Arte, faz sua marca estar
-                            sempre conectada com seus clientes e seus valores.</span>
-                    </p>
-                </div>
-                <div class='highlights__container'>
-                    <svg class='projects-done__icon-check fill-publicidade' xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 448 512'>
-                        <path
-                            d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
-                    </svg>
-                    <p class='projects-done__title color-publicidade'>PUBLICIDADE | PROPAGANDA<br>
+                    <p class='projects-done__title color-publicidade'>PUBLICIDADE<br>
                         <span class='projects-done__texts'>Como publicitário estou sempre pensando no relacionamento da
                             empresa com o cliente e como eles vão se manter conectados.</span>
                     </p>
                 </div>
-                <div class='highlights__container'>
-                    <svg class='projects-done__icon-check fill-marketing' xmlns='http://www.w3.org/2000/svg'
-                        viewBox='0 0 448 512'>
-                        <path
-                            d='M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z' />
-                    </svg>
-                    <p class='projects-done__title color-marketing'>MARKETING DIGITAL<br>
-                        <span class='projects-done__texts'>Analisando a realidade do seu negócio, é possível desenvolver
-                            oportunidades e estratégias otimizadas para cada situação.</span>
-                    </p>
-                </div>
             </div>
+
+
         </section>
 
         <!-- Works -->
@@ -269,7 +277,7 @@
         <section id='knowledge' class='knowledge'>
             <!-- Font Awesome Resolver ou remover -->
             <h2 class='knowledge__title'><span>HABIL</span>IDADE</h2>
-            <h3 class='knowledge__subtitle'>tecnologias &nbsp &nbsp | &nbsp &nbsp programas &nbsp &nbsp | &nbsp &nbsp
+            <h3 class='knowledge__subtitle'>tech &nbsp &nbsp | &nbsp &nbsp programas &nbsp &nbsp | &nbsp &nbsp
                 processos</h3>
             <div class='knowledge__container'>
                 <!-- HTML5 -->
@@ -438,7 +446,7 @@
         <!-- Services -->
         <section id='services' class='services'>
             <h2 class='services__title'>SERVIÇ<span>OS</span></h2>
-            <h3 class='services__subtitle'>tec &nbsp &nbsp | &nbsp &nbsp design &nbsp &nbsp | &nbsp &nbsp
+            <h3 class='services__subtitle'>tech &nbsp &nbsp | &nbsp &nbsp design &nbsp &nbsp | &nbsp &nbsp
                 publicidade &nbsp &nbsp| &nbsp &nbsp mkt
             </h3>
             <div class='services__container'>
@@ -457,7 +465,7 @@
         <!-- Portfolio -->
         <section id='portfolio' class='portfolio'>
             <h2 class='portfolio__title'><span>PORT</span>FÓLIO</h2>
-            <h3 class='portfolio__subtitle'>tec &nbsp &nbsp | &nbsp &nbsp design &nbsp &nbsp | &nbsp &nbsp
+            <h3 class='portfolio__subtitle'>tech &nbsp &nbsp | &nbsp &nbsp design &nbsp &nbsp | &nbsp &nbsp
                 publicidade &nbsp &nbsp| &nbsp &nbsp mkt
             </h3>
             <div class='portfolio__container'>

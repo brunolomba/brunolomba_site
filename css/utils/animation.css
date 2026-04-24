@@ -97,3 +97,54 @@ html {
         transform: translateY(0);
     }
 }
+
+/* Animation Hero Background */
+#stars,
+#stars2,
+#stars3 {
+    background: transparent;
+    position: absolute;
+    top: 0;
+}
+
+#stars {
+    width: 1px;
+    height: 1px;
+    animation: animStar 50s linear infinite;
+}
+
+#stars2 {
+    width: 2px;
+    height: 2px;
+    animation: animStar 100s linear infinite;
+}
+
+#stars3 {
+    width: 3px;
+    height: 3px;
+    animation: animStar 150s linear infinite;
+}
+
+/* Criando o efeito de loop infinito */
+#stars:after,
+#stars2:after,
+#stars3:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: inherit;
+    height: inherit;
+    background: transparent;
+    box-shadow: inherit;
+    /* Copia as estrelas geradas pelo JS */
+}
+
+@keyframes animStar {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(-2000px);
+    }
+}
