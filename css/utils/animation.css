@@ -104,6 +104,7 @@ html {
 #stars3 {
     background: transparent;
     position: absolute;
+    opacity: .3;
     top: 0;
 }
 
@@ -131,7 +132,6 @@ html {
 #stars3:after {
     content: " ";
     position: absolute;
-    top: 2000px;
     width: inherit;
     height: inherit;
     background: transparent;
